@@ -83,7 +83,7 @@ export class ToolbarComponent implements OnInit, OnDestroy {
      * 切换全屏
      */
     toggleFullscreen() {
-        if (screenfull.enabled) {
+        if (screenfull && screenfull.enabled) {
             screenfull.toggle();
             this.isFullscreen = !this.isFullscreen;
         }
